@@ -11,6 +11,8 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
+    
+    var theUpdatableObject:UpdateImageProtocol!
 
     let theIconList = ["backpack.png","bomb.png","book.png","briefcase.png","bubble-chat.png","bubble-heart.png","camera-photo.png","camera-polaroid.png","camera-video.png","cassette-player.png","charlie-chaplin.png","chef-hat.png","clock.png","coffee-machine.png","cog.png","computer-imac.png","computer-network.png","computer-pc.png","computer-screen-1.png","computer-screen-2.png","contact-book.png","content-download.png","cooking-pot.png","crop.png","crown.png","designer-cup.png","diving-gear.png","drink-cocktail.png","drink-coffee.png","e-mail.png","envelope.png","eyedropper.png","fork-knife.png","forklift.png","fountain-pen-head-1.png","fountain-pen-head-2.png","gauge.png","globe.png","grid.png","griller.png","handbag.png","headphone.png","heart.png","home.png","hotdog.png","icecream.png","image.png","iphone.png","ipod.png","layers-image.png","layers.png","link.png","location-pin.png","location-user.png","lock-locked.png","lock-unlocked.png","magic-wand.png","magnet.png","microphone.png","monocle.png","mp3-player.png","music-note.png","notebook-1.png","notebook-2.png","paint-brush.png","paint-bucket.png","paint-palette.png","paint-roller.png","pen-fountain.png","pen-point-tip.png","pencil-ruler.png","picture-frame.png","quill-ink.png","refresh.png","remote-control-hand.png","remote-control-screen.png","script.png","server.png","settings.png","shield-cross.png","shopping-cart-add.png","shopping-cart-remove.png","skull.png","smart-device.png","smiley.png","sneakers.png","sofa.png","stamp.png","sub-woofer.png","syringe.png","target.png","teapot.png","trash-can.png","umbrella.png","user-chat.png","user.png","vector.png","windows.png","wrenches.png","write.png"]
     
@@ -29,6 +31,11 @@ class CollectionViewController: UICollectionViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.theUpdatableObject.UpdateImage(theImageName: self.theIconList[indexPath.row])
+        self.navigationController!.popViewController(animated: true)
     }
 
     /*

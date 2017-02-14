@@ -14,6 +14,7 @@
 		83C15BFA1E53C1EC0090118B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C15BF81E53C1EC0090118B /* LaunchScreen.storyboard */; };
 		83C15C021E53C4250090118B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C15C011E53C4250090118B /* CollectionViewController.swift */; };
 		83C15C041E53C4390090118B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C15C031E53C4390090118B /* CollectionViewCell.swift */; };
+		83C15C061E53CB020090118B /* UpdateImageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C15C051E53CB020090118B /* UpdateImageProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		83C15BFB1E53C1EC0090118B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C15C011E53C4250090118B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		83C15C031E53C4390090118B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		83C15C051E53CB020090118B /* UpdateImageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateImageProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				83C15BEF1E53C1EC0090118B /* AppDelegate.swift */,
 				83C15BF11E53C1EC0090118B /* ViewController.swift */,
 				83C15BF31E53C1EC0090118B /* Main.storyboard */,
+				83C15C051E53CB020090118B /* UpdateImageProtocol.swift */,
 				83C15C031E53C4390090118B /* CollectionViewCell.swift */,
 				83C15C011E53C4250090118B /* CollectionViewController.swift */,
 				83C15BF61E53C1EC0090118B /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				83C15BF21E53C1EC0090118B /* ViewController.swift in Sources */,
 				83C15C041E53C4390090118B /* CollectionViewCell.swift in Sources */,
 				83C15BF01E53C1EC0090118B /* AppDelegate.swift in Sources */,
+				83C15C061E53CB020090118B /* UpdateImageProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

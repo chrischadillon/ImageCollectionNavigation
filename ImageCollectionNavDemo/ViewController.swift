@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UpdateImageProtocol {
 
     @IBOutlet var theImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.theImageView.backgroundColor = UIColor.lightGray
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +23,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func UpdateImage(theImageName:String) {
+        self.theImageView.backgroundColor = UIColor.white
+        self.theImageView.image = UIImage(named: theImageName)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let theCollectionVC = segue.destination as! CollectionViewController
+        theCollectionVC.theUpdatableObject = self
+    }
 }
 
